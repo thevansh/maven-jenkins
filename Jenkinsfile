@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Git clone'){
             steps{
-                git 'https://github.com/shazforiot/HelloWorld-Springboot-App.git'
+                git 'https://github.com/thevansh/maven-jenkins.git'
             }
         }
         
@@ -12,9 +12,9 @@ pipeline{
                 sh 'mvn package'
             }
         }
-        stage('Create Dockerimage'){
+        stage('test build'){
             steps{
-                sh 'docker build -t thetips4you/springboot:latest .'
+                echo 'building test pipeline'
             }
         }
         
