@@ -7,14 +7,14 @@ pipeline{
             }
         }
         
-        stage('maven build'){
-            steps{
-                sh 'mvn package'
-            }
-        }
         stage('test build'){
             steps{
-                echo 'building test pipeline'
+                echo 'building qa pipeline'
+            }
+        }
+        stage('qa build'){
+            steps{
+                echo 'building qa pipeline'
             }
         }
         
