@@ -7,14 +7,14 @@ pipeline{
             }
         }
         
-        stage('test build'){
-            steps{
-                echo 'building test pipeline'
-            }
-        }
         stage('qa build'){
             steps{
                 echo 'building qa pipeline'
+            }
+        }
+        stage('prod build'){
+            steps{
+                echo 'building prod pipeline'
             }
         }
         
